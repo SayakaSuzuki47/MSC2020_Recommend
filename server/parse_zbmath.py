@@ -28,7 +28,7 @@ def make_msc2020_num_list(lst):
             for classification in lst[2:]:
                 counter = counter + make_keyword_msc2020_list(classification)
         counter_dct = dict(counter)
-        counter_dct = sorted( counter_dct, key=None, reverse=False )
+        counter_dct = sorted( counter_dct.items(), key=lambda x:x[1],reverse = True)
         if len(counter_dct)==0:
             print("Alert! : Please include words that are characteristic of the sentence.")
         else:
