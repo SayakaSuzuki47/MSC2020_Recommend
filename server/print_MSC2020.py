@@ -6,5 +6,5 @@ def print_msc2020(lst,msc_array):
         for line in lst:
             (msc_num, num) = line
             msc_name = msc_array[msc_array[:,0] == msc_num]
-            sentence = str(msc_num)+' : ' + str(msc_name) + ' (The frequency is '+ str(num) + '.)'
+            sentence = str(msc_num) +' : ' + str(msc_name) + ' (The frequency is '+ str(num) + '.)'
             print(sentence)
