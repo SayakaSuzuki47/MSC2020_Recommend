@@ -27,4 +27,7 @@ def make_msc2020_num_list(lst):
         if len(lst)>1:
             for classification in lst[2:]:
                 counter = counter + make_keyword_msc2020_list(classification)
-        return counter
+        if len(counter)==0:
+            print("Alert! : Please include words that are characteristic of the sentence.")
+        else:
+            return counter
