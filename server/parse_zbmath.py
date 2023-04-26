@@ -19,7 +19,7 @@ def make_keyword_msc2020_list(keyword):
     
     return count
 
-def make_msc2020_num_list(lst):
+def make_msc2020_num_list(lst,num = 10):
     if len(lst)==0:
         print("Alert! : Please include words that are characteristic of the sentence.")
     else:
@@ -27,9 +27,8 @@ def make_msc2020_num_list(lst):
         if len(lst)>1:
             for classification in lst[2:]:
                 counter = counter + make_keyword_msc2020_list(classification)
-        counter_dct = dict(counter)
-        counter_dct = sorted( counter_dct.items(), key=lambda x:x[1],reverse = True)
-        if len(counter_dct)==0:
+        counter = counter.most_common(num)
+        if len(counter)==0:
             print("Alert! : Please include words that are characteristic of the sentence.")
         else:
-            return counter_dct
+            return counter
