@@ -14,25 +14,20 @@ def make_keyword_msc2020_list(keyword):
     for classification in root.iter('{https://zbmath.org/zbmath/elements/1.0/}classification'):
         classifications.append(classification.text)
         
-    count = Counter(classifications)
+    classifications
     
-    return count
+    return classifications
 
 def make_msc2020_num_list(lst,num = 10):
     try:
         len(lst)==0
     except ValueError:
         print("Alert! : Please include words that are characteristic of the sentence.")
-    else:
-        counter = make_keyword_msc2020_list(lst[0])
-        if len(lst)>1:
-            for classification in lst[2:]:
-                counter = counter + make_keyword_msc2020_list(classification)
-        min_num = min(num,len(counter))
-        counter = counter.most_common(min_num)
-        try:
-            len(counter)==0
-        except ValueError:
-            print("Alert! : Please include words that are characteristic of the sentence.")
-        else:
-            return counter
+    count_dct = {}
+    for keyword in lst:
+        classifications = make_keyword_msc2020_list(keyword)
+        for index in classifications:
+            count_dct[index] = count_dct.get(index, 0) +1
+    count_dct = sorted(count_dct.items(), key=lambda x:x[1],reverse = True)
+    min_num = min(num, len(count_dct))
+    return count_dct[0:min_num]
