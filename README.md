@@ -18,14 +18,13 @@ To run the notebook on Google Colaboratory, please follow these instructions:
 Please note that you will need a Google account to use Google Colaboratory.
 
 ## Acknowledgements/Licenses
-This project uses the following open-source code or libraries:
-This project uses the pre-trained machine learning model provided by [yanekyuk/bert-uncased-keyword-extractor](https://huggingface.co/yanekyuk/bert-uncased-keyword-extractor) from Hugging Face. The model was used to generate predictions based on the input data. The license for the model is apache-2.0, and we have confirmed that we are in compliance with the terms of that license.
+This project uses the following open-source code or libraries:  
+[[yanekyuk/bert-uncased-keyword-extractor](https://huggingface.co/yanekyuk/bert-uncased-keyword-extractor)] (apache-2.0)-[The model was used to generate predictions based on the input data].
 
-In addition, the following code or library has been modified and used in this project:
-The MSC2020 labels have been modified for ease of use and can be accessed from the following URL:
-[Mathematics Subject Classification 2020](https://mathscinet.ams.org/msnhtml/msc2020.pdf)
-The license for the model is  a Creative Commons [CC-BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/), and we have confirmed that we are in compliance with the terms of that license.
+In addition, the following code or library has been modified and used in this project:  
+・[Mathematics Subject Classification 2020] (a Creative Commons [CC-BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/))- [We have created a table of labels and their corresponding descriptions.]
+Documentation and terms of use available at [Mathematics Subject Classification 2020](https://mathscinet.ams.org/msnhtml/msc2020.pdf).
+The labels can be found in [MSC2020 table](MSC/MSC2020.tsv). If you notice any errors or omissions, please let us know. Thank you!
 
-The labels can be found in [MSC2020 table](MSC/MSC2020.tsv). If you notice any errors or omissions, please let me know. Thank you!
-
-This project uses the following APIs:
+This project uses the following APIs:  
+・[zbMATH Open API] ([CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/))- [We are crawling keywords and counting the number of classification labels in MSC2020]. Documentation and terms of use available at [[API URL](https://zboai.formulasearchengine.com/)]
