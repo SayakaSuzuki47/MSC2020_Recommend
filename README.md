@@ -24,5 +24,8 @@ This project uses the pre-trained machine learning model provided by [yanekyuk/b
 In addition, the following code or library has been modified and used in this project:
 The MSC2020 labels have been modified for ease of use and can be accessed from the following URL:
 [Mathematics Subject Classification 2020](https://mathscinet.ams.org/msnhtml/msc2020.pdf)
+The license for the model is  a Creative Commons [CC-BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/), and we have confirmed that we are in compliance with the terms of that license.
 
 The labels can be found in [MSC2020 table](MSC/MSC2020.tsv). If you notice any errors or omissions, please let me know. Thank you!
+
+This project uses the following APIs:
