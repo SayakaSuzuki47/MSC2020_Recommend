@@ -2,7 +2,7 @@
 This is a script that recommends MSC2020 from abstracts and other texts.  
 
 ## Quick start
-This repository includes a Jupyter notebook file in the 'recom_MSC2020.ipynb' format, which can be executed on Google Colaboratory.
+This repository includes a Jupyter Notebook file in the 'recom_MSC2020.ipynb' format, which can be executed on Google Colaboratory.
 
 To run the notebook on Google Colaboratory, please follow these instructions:
 
