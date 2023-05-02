@@ -24,6 +24,7 @@ def make_msc_num_list(lst,num = 10):
             raise ValueError("Alert! : Please include words that are characteristic of the sentence.")
     except ValueError as e:
         print(e)
+        return
     count_dct = {}
     for keyword in lst:
         classifications = make_keyword_msc_list(keyword)
