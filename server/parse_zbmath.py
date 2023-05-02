@@ -31,5 +31,5 @@ def make_msc_num_list(lst,num = 10):
         for index in classifications:
             count_dct[index] = count_dct.get(index, 0) +1
     count_dct = sorted(count_dct.items(), key=lambda x:x[1],reverse = True)
-    min_num = min(num, len(count_dct))
+    min_num = min(num+1, len(count_dct))
     return count_dct[0:min_num]
