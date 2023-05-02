@@ -1,9 +1,10 @@
 import fileinput
-def print_msc2020(lst,msc_array):
+def print_msc(lst,msc_array):
     try:
-        len(lst) == 0
-    except ValueError:
-        print("Alert! : Please include words that are characteristic of the sentence.")
+        if len(lst) == 0:
+            raise ValueError("Alert! : Please include words that are characteristic of the sentence.")
+    except ValueError as e:
+        print(e)
     for line in lst:
         (msc_num, num) = line
         msc_num_lst = msc_array[msc_array[:,0] == msc_num]
