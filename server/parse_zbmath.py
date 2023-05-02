@@ -6,10 +6,10 @@ from collections import Counter
 def make_keyword_msc_list(keyword):
     keyword_for_url = keyword.replace(" ", "%20")
     url = 'https://oai.zbmath.org/v1/helper/filter?filter=keyword%3A'+ keyword_for_url + '&metadataPrefix=oai_zb_preview'
-    url = ‘https://oai.zbmath.org/v1/helper/filter’
-    params = {‘filter’: ‘keyword: ’ + keyword,
-            ‘metadataPrefix’ : ‘oai_zb_preview’,
-            ‘accept’: ‘text/xml’}
+    url = 'https://oai.zbmath.org/v1/helper/filter'
+    params = {'filter': 'keyword: ' + keyword,
+            'metadataPrefix': 'oai_zb_preview',
+            'accept': 'text/xml'}
     response = requests.get(url, params=params, timeout=10)
     root = ET.fromstring(response.text)
     
