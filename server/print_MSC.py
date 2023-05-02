@@ -1,5 +1,5 @@
 import fileinput
-def print_msc2020(lst,msc_array):
+def print_msc(lst,msc_array):
     if len(lst) == 0:
         print("Alert! : Please include words that are characteristic of the sentence.")
     else:
