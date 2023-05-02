@@ -10,7 +10,7 @@ def make_keyword_msc_list(keyword):
     params = {‘filter’: ‘keyword: ’ + keyword,
             ‘metadataPrefix’ : ‘oai_zb_preview’,
             ‘accept’: ‘text/xml’}
-    response = requests.get(url, params=params)
+    response = requests.get(url, params=params, timeout=10)
     root = ET.fromstring(response.text)
     
     classifications = []
