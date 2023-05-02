@@ -5,6 +5,7 @@ def print_msc(lst,msc_array):
             raise ValueError("Alert! : Please include words that are characteristic of the sentence.")
     except ValueError as e:
         print(e)
+        return
     for line in lst:
         (msc_num, num) = line
         msc_num_lst = msc_array[msc_array[:,0] == msc_num]
