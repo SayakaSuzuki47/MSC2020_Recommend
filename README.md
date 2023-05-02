@@ -15,6 +15,7 @@ To run the notebook on Google Colaboratory, please follow these instructions:
 7. You can choose the number of MSC2020 labels you want to display by changing the numerical value in the corresponding cell.
 8. Once you have entered the text and selected the desired number of labels, run the notebook to see the classification results.
 
+The error “Max retries exceeded with url” may occur; restarting with a new instance of Google Colaboratry may fix it.
 Please note that you will need a Google account to use Google Colaboratory.
 
 ## Acknowledgements/Licenses
